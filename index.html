@@ -1,0 +1,1499 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="XLToken TrustChain 信链">
+
+    <meta name="author" content="Muhammad Morshed">
+
+    <title>Trust Chain-基于区块链的数据征信平台</title>
+
+    <!-- Mobile Specific Meta
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="./img/logo1.png"/>
+
+    <!-- CSS
+    ================================================== -->
+    <!-- Fontawesome Icon font -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <!-- Grid Component css -->
+    <link rel="stylesheet" href="css/component.css">
+    <!-- Slit Slider css -->
+    <link rel="stylesheet" href="css/slit-slider.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Media Queries -->
+    <link rel="stylesheet" href="css/media-queries.css">
+
+    <!--
+    Google Font
+    =========================== -->
+
+    <!-- Oswald / Title Font -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+    <!-- Ubuntu / Body Font -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300' rel='stylesheet' type='text/css'>
+
+    <!-- Modernizer Script for old Browsers -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+
+</head>
+
+<body id="body">
+<!--
+Start Preloader
+==================================== -->
+<div id="loading-mask">
+    <div class="loading-img">
+        <img alt="Meghna Preloader" src="img/preloader.gif"/>
+    </div>
+</div>
+<!--
+End Preloader
+==================================== -->
+
+<!--
+Welcome Slider
+==================================== -->
+<section id="home">
+
+    <div id="slitSlider" class="sl-slider-wrapper">
+        <div class="sl-slider">
+
+            <!-- single slide item -->
+            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25"
+                 data-slice1-scale="2" data-slice2-scale="2">
+                <div class="sl-slide-inner">
+                    <div class="bg-img bg-img-1"></div>
+                    <div class="carousel-caption">
+                        <div>
+                            <!--<img class="wow fadeInUp" src="img/meghna.png" alt="Meghna">-->
+                            <h2 data-wow-duration="500ms" data-wow-delay="500ms" class="heading animated fadeInRight">
+                                区块链大数据征信平台</h2>
+                            <a class="btn btn-green animated fadeInUp" target="_blank" href="doc/white_paper_cn.pdf" style="background: #007CE2">白皮书</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /single slide item -->
+
+            <!-- single slide item -->
+            <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15"
+                 data-slice1-scale="1.5" data-slice2-scale="1.5">
+                <div class="sl-slide-inner">
+                    <div class="bg-img bg-img-2"></div>
+                    <div class="carousel-caption">
+                        <div>
+                            <h2 class="heading animated fadeInDown">信任你我 链接未来</h2>
+                            <!--<h3 class="animated fadeInUp">With all Mejor Browser support including IE 9</h3>-->
+                            <a class="btn btn-green animated fadeInUp" target="_blank" href="doc/white_paper_cn.pdf" style="background: #007CE2">白皮书</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /single slide item -->
+
+            <!-- single slide item -->
+            <!--<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">-->
+            <!--<div class="sl-slide-inner">-->
+            <!--<div class="bg-img bg-img-3"></div>-->
+            <!--<div class="carousel-caption">-->
+            <!--<div>-->
+            <!--<h2 class="heading animated fadeInRight">One Page Parallax HTML Template</h2>-->
+            <!--<h3 class="animated fadeInLeft">Clean and Professional Design</h3>-->
+            <!--<a class="btn btn-green animated fadeInUp" href="#">Learn More</a>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!-- /single slide item -->
+
+        </div><!-- /sl-slider -->
+
+        <nav id="nav-arrows" class="nav-arrows">
+            <span class="nav-arrow-prev">Previous</span>
+            <span class="nav-arrow-next">Next</span>
+        </nav>
+
+        <nav id="nav-dots" class="nav-dots">
+            <span class="nav-dot-current"></span>
+            <span></span>
+            <span></span>
+        </nav>
+
+    </div><!-- /slider-wrapper -->
+</section>
+<!--/#home section-->
+
+<!--
+Fixed Navigation
+==================================== -->
+<header id="navigation" class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <div style="height: 76px;line-height: 75px;">
+                <img src="./img/logo4.png" alt="">
+            </div>
+            <!-- responsive nav button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- /responsive nav button -->
+
+            <!-- logo -->
+            <!--<a class="navbar-brand" href="#body">-->
+            <!--<h1 id="logo">-->
+            <!--<img src="img/logo-meghna.png" alt="Meghna" />-->
+            <!--</h1>-->
+            <!--</a>-->
+            <!-- /logo -->
+        </div>
+
+        <!-- main nav -->
+        <nav class="collapse navbar-collapse navbar-right" role="Navigation">
+            <ul id="nav" class="nav navbar-nav">
+                <!--<li class="current"><a href="#body">三大优势</a></li>-->
+                <li class="current"><a href="#about">三大优势</a></li>
+                <li><a href="#counter">项目介绍</a></li>
+                <li><a href="#services">项目来源</a></li>
+                <li><a href="#showcase">团队介绍</a></li>
+                <li><a href="#team-skills">投资团队</a></li>
+                <li><a href="#our-team">项目实施与规划</a></li>
+                <li><a href="#twitter-feed">发展前景</a></li>
+                <li><a href="#pricing">媒体团队</a></li>
+                <li><a href="#testimonial">产品运营</a></li>
+                <li><a href="#blog">新闻资讯</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        中文
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">中文</a></li>
+                        <li><a href="en/index.html">English</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- /main nav -->
+
+    </div>
+</header>
+<!--
+End Fixed Navigation
+==================================== -->
+
+<!--
+Start About Section
+==================================== -->
+<section id="about" class="bg-one">
+    <div class="container">
+        <div class="row" style="color: #FFFFFF;">
+
+            <!-- section title -->
+            <div class="title text-center wow fadeIn" data-wow-duration="1500ms">
+                <h2><span class="color" style="color: #007CE2;">三大优势</span></h2>
+                <div class="border"></div>
+            </div>
+            <!-- /section title -->
+
+            <!-- About item -->
+            <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms">
+                <div class="wrap-about">
+                    <div class="icon-box">
+                        <i class="fa fa-users fa-4x"></i>
+                    </div>
+                    <!-- Express About Yourself -->
+                    <div class="about-content text-center">
+                        <!--<h3 class="ddd">We're Creative</h3>								-->
+                        <p>信链使用低价可靠的区块量网络将专业的风控服务提供给各行各业，促进信贷机构有条件共享信用数据，减少优质企业贷款难降低放款风险系数</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End About item -->
+
+            <!-- About item -->
+            <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="250ms">
+                <div class="wrap-about">
+                    <div class="icon-box">
+                        <i class="fa fa-lock fa-4x"></i>
+                    </div>
+                    <!-- Express About Yourself -->
+                    <div class="about-content text-center">
+                        <!--<h3>We're Professional</h3>-->
+                        <p>信链将借贷合同记录在区块链，并提供对合同的预审核服务，避免了合同纠纷，合同漏洞骗局的发生。其合同数据无法篡改，各方安心
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- End About item -->
+
+            <!-- About item -->
+            <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+                <div class="wrap-about kill-margin-bottom">
+                    <div class="icon-box">
+                        <i class="fa fa-sort-amount-desc fa-4x"></i>
+                    </div>
+                    <!-- Express About Yourself -->
+                    <div class="about-content text-center">
+                        <!--<h3>We're Professional</h3>-->
+                        <p>信链通过代扣系统结合区块链形成放贷，还款的高速资金通路，省去了许多资金流通成本，减少了资金在流通环节上的损耗</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End About item -->
+
+        </div>        <!-- End row -->
+    </div>    <!-- End container -->
+</section>   <!-- End section -->
+
+<!--
+Start Counter Section
+==================================== -->
+
+<section id="counter" class="parallax-section">
+    <div class="container">
+        <div class="row">
+            <div class="title text-center wow fadeIn" data-wow-duration="500ms">
+                <h2><span class="color" style="color: #007CE2;">项目介绍</span></h2>
+                <div class="border"></div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms">
+                Trustchain
+                是一个基于区块链开发的去中心化数据查询平台，用区块链奖励机制鼓励用户数据上链，现已与阿里芝麻信用对接，我们会在区块链上建立一个可信任的网络，让各个行业的大数据都可以共享、可互相交换、并且信任、提高信息传递，真正让世界大数据远离垄断，让信息都在链上传输价值，并能够让数据这项最重要的生产资源，为商业和我们的生活带来更高的价值。让个人信用问题通过去中心化的链上数据完美展现，我们拥有不缓存数据、且保护个人隐私、保护数据所有权、并通过区块链不可篡改技术有效遏制造假及匿名交易等特点。我们将面对小额贷款、金融、银行、招聘、家政、交易等企业及有数据需求的各个部门，以去中心化的思维去解决各个行业的数据安全流通等环节中难以解决的诸多核心问题，并可以为全社会所用。
+            </div>
+            <!-- first count item -->
+            <!--<div class="col-md-2 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms">-->
+            <!--<div class="counters-item">-->
+            <!--<div>-->
+            <!--<span data-speed="3000" data-to="320">30%</span>-->
+            <!--</div>-->
+            <!--<i class="fa fa-users fa-3x"></i>-->
+            <!--<h3>私募额度</h3>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; end first count item &ndash;&gt;-->
+
+            <!--&lt;!&ndash; second count item &ndash;&gt;-->
+            <!--<div class="col-md-2 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">-->
+            <!--<div class="counters-item">-->
+            <!--<div>-->
+            <!--<span data-speed="3000" data-to="565">10%</span>-->
+            <!--</div>-->
+            <!--<i class="fa fa-check-square fa-3x"></i>-->
+            <!--<h3>天使投资</h3>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; end second count item &ndash;&gt;-->
+
+            <!--&lt;!&ndash; third count item &ndash;&gt;-->
+            <!--<div class="col-md-2 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="400ms">-->
+            <!--<div class="counters-item">-->
+            <!--<div>-->
+            <!--<span data-speed="3000" data-to="95">20%</span>-->
+            <!--<span>%</span>-->
+            <!--</div>-->
+            <!--<i class="fa fa-thumbs-up fa-3x"></i>-->
+            <!--<h3>团队持有</h3>-->
+
+            <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; end third count item &ndash;&gt;-->
+
+            <!--&lt;!&ndash; fourth count item &ndash;&gt;-->
+            <!--<div class="col-md-2 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">-->
+            <!--<div class="counters-item kill-margin-bottom">-->
+            <!--<div>-->
+            <!--<span data-speed="3000" data-to="2500">20%</span>-->
+            <!--</div>-->
+            <!--<i class="fa fa-coffee fa-3x"></i>-->
+            <!--<h3>社区搭建</h3>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-md-2 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">-->
+            <!--<div class="counters-item kill-margin-bottom">-->
+            <!--<div>-->
+            <!--<span data-speed="3000" data-to="2500">20%</span>-->
+            <!--</div>-->
+            <!--<i class="fa fa-coffee fa-3x"></i>-->
+            <!--<h3>信基金</h3>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!-- end fourth count item -->
+
+        </div>        <!-- end row -->
+    </div>    <!-- end container -->
+</section>   <!-- end section -->
+
+
+<!--<section id="about" class="bg-one">-->
+<!--<div class="container">-->
+<!--<div class="row" style="color: #FFFFFF;">-->
+
+<!--&lt;!&ndash; section title &ndash;&gt;-->
+<!--<div class="title text-center wow fadeIn" data-wow-duration="1500ms" >-->
+<!--<h2><span class="color" style="color: #007CE2;">三大优势</span></h2>-->
+<!--<div class="border"></div>-->
+<!--</div>-->
+<!--&lt;!&ndash; /section title &ndash;&gt;-->
+
+<!--&lt;!&ndash; About item &ndash;&gt;-->
+<!--<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" >-->
+<!--<div class="wrap-about">-->
+<!--<div class="icon-box">-->
+<!--<i class="fa fa-lightbulb-o fa-4x"></i>-->
+<!--</div>-->
+<!--&lt;!&ndash; Express About Yourself &ndash;&gt;-->
+<!--<div class="about-content text-center">-->
+<!--&lt;!&ndash;<h3 class="ddd">We're Creative</h3>								&ndash;&gt;-->
+<!--<p>信链使用低价可靠的区块量网络将专业的风控服务提供给各行各业，促进信贷机构有条件共享信用数据，减少优质企业贷款难降低放款风险系数</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--&lt;!&ndash; End About item &ndash;&gt;-->
+
+<!--&lt;!&ndash; About item &ndash;&gt;-->
+<!--<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="250ms">-->
+<!--<div class="wrap-about">-->
+<!--<div class="icon-box">-->
+<!--<i class="fa fa-users fa-4x"></i>-->
+<!--</div>-->
+<!--&lt;!&ndash; Express About Yourself &ndash;&gt;-->
+<!--<div class="about-content text-center">-->
+<!--&lt;!&ndash;<h3>We're Professional</h3>&ndash;&gt;-->
+<!--<p>信链将借贷合同记录在区块链，并提供对合同的预审核服务，避免了合同纠纷，合同漏洞骗局的发生。其合同数据无法篡改，各方安心-->
+
+<!--</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--&lt;!&ndash; End About item &ndash;&gt;-->
+
+<!--&lt;!&ndash; About item &ndash;&gt;-->
+<!--<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">-->
+<!--<div class="wrap-about kill-margin-bottom">-->
+<!--<div class="icon-box">-->
+<!--<i class="fa fa-users fa-4x"></i>-->
+<!--</div>-->
+<!--&lt;!&ndash; Express About Yourself &ndash;&gt;-->
+<!--<div class="about-content text-center">-->
+<!--&lt;!&ndash;<h3>We're Professional</h3>&ndash;&gt;-->
+<!--<p>信链通过代扣系统结合区块链形成放贷，还款的高速资金通路，省去了许多资金流通成本，减少了资金在流通环节上的损耗</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--&lt;!&ndash; End About item &ndash;&gt;-->
+
+<!--</div> 		&lt;!&ndash; End row &ndash;&gt;-->
+<!--</div>   	&lt;!&ndash; End container &ndash;&gt;-->
+<!--</section>   &lt;!&ndash; End section &ndash;&gt;-->
+
+<!--
+Start Counter Section
+==================================== -->
+
+<!--<section id="counter" class="parallax-section">-->
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<div class="title text-center wow fadeIn" data-wow-duration="500ms">-->
+<!--<h2><span class="color" style="color: #007CE2;">TTC 分配比例</span></h2>-->
+<!--<div class="border"></div>-->
+<!--</div>-->
+<!--&lt;!&ndash; first count item &ndash;&gt;-->
+<!--<div class="col-md-2 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms">-->
+<!--<div class="counters-item">-->
+<!--<div>-->
+<!--<span data-speed="3000" data-to="320">30%</span>-->
+<!--</div>-->
+<!--<i class="fa fa-users fa-3x"></i>-->
+<!--<h3>私募额度</h3>-->
+<!--</div>-->
+<!--</div>-->
+<!--&lt;!&ndash; end first count item &ndash;&gt;-->
+
+<!--&lt;!&ndash; second count item &ndash;&gt;-->
+<!--<div class="col-md-2 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">-->
+<!--<div class="counters-item">-->
+<!--<div>-->
+<!--<span data-speed="3000" data-to="565">10%</span>-->
+<!--</div>-->
+<!--<i class="fa fa-check-square fa-3x"></i>-->
+<!--<h3>天使投资</h3>-->
+<!--</div>-->
+<!--</div>-->
+<!--&lt;!&ndash; end second count item &ndash;&gt;-->
+
+<!--&lt;!&ndash; third count item &ndash;&gt;-->
+<!--<div class="col-md-2 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="400ms">-->
+<!--<div class="counters-item">-->
+<!--<div>-->
+<!--<span data-speed="3000" data-to="95">20%</span>-->
+<!--<span>%</span>-->
+<!--</div>-->
+<!--<i class="fa fa-thumbs-up fa-3x"></i>-->
+<!--<h3>团队持有</h3>-->
+
+<!--</div>-->
+<!--</div>-->
+<!--&lt;!&ndash; end third count item &ndash;&gt;-->
+
+<!--&lt;!&ndash; fourth count item &ndash;&gt;-->
+<!--<div class="col-md-2 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">-->
+<!--<div class="counters-item kill-margin-bottom">-->
+<!--<div>-->
+<!--<span data-speed="3000" data-to="2500">20%</span>-->
+<!--</div>-->
+<!--<i class="fa fa-coffee fa-3x"></i>-->
+<!--<h3>社区搭建</h3>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="col-md-2 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">-->
+<!--<div class="counters-item kill-margin-bottom">-->
+<!--<div>-->
+<!--<span data-speed="3000" data-to="2500">20%</span>-->
+<!--</div>-->
+<!--<i class="fa fa-coffee fa-3x"></i>-->
+<!--<h3>信基金</h3>-->
+<!--</div>-->
+<!--</div>-->
+<!--&lt;!&ndash; end fourth count item &ndash;&gt;-->
+
+<!--</div> 		&lt;!&ndash; end row &ndash;&gt;-->
+<!--</div>   	&lt;!&ndash; end container &ndash;&gt;-->
+<!--</section>   &lt;!&ndash; end section &ndash;&gt;-->
+
+
+<!-- Start Services Section
+==================================== -->
+
+<section id="services" class="bg-one">
+    <div class="container">
+        <div class="row">
+
+            <!-- section title -->
+            <div class="title text-center wow fadeIn" data-wow-duration="500ms">
+                <h2><span class="color" style="color: #007CE2;">项目来源</span></h2>
+                <div class="border"></div>
+            </div>
+            <!-- /section title -->
+
+            <!-- Single Service Item -->
+            <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
+                <div class="service-block text-center">
+                    <div class="service-icon text-center">
+                        <i class="fa fa-chain fa-5x"></i>
+                    </div>
+                    <h3>区块链是什么</h3>
+                    <p>区块链是一个由全体联网节点共同维护并持有同一账本的分布式数据库，它通过算法来达成共识，在无需信任的各节点中构建一个无单一故障点或控制节点的去中心化可信系统</p>
+                </div>
+            </article>
+            <!-- End Single Service Item -->
+
+            <!-- Single Service Item -->
+            <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+                <div class="service-block text-center">
+                    <div class="service-icon text-center">
+                        <i class="fa fa-thumbs-up fa-5x"></i>
+                    </div>
+                    <h3>信用是什么</h3>
+                    <p>从借贷的角度来说，信用可以看成一种风险预期，作为判定某一行为主体在预定的时间段内是否完成承诺并交付的评估依据，而征信则是据此展开的风险评估活动</p>
+                </div>
+            </article>
+            <!-- End Single Service Item -->
+
+            <!-- Single Service Item -->
+            <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
+                <div class="service-block text-center">
+                    <div class="service-icon text-center">
+                        <i class="fa fa-gg fa-5x"></i>
+                    </div>
+                    <h3>信链是什么</h3>
+                    <p>信链是一种低成本的，无边界的，自主可控的去中心化数字共享生态，它通过帮助小贷公司等传统金融机构在确保自己客户信息及商业机密不泄露的前提下，共享用户信贷记录，并从中获利</p>
+                </div>
+            </article>
+            <!-- End Single Service Item -->
+
+            <!-- Single Service Item -->
+            <!--<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">-->
+            <!--<div class="service-block text-center">-->
+            <!--<div class="service-icon text-center">-->
+            <!--<i class="fa fa-eye fa-5x"></i>-->
+            <!--</div>-->
+            <!--<h3>Graphic Design</h3>-->
+            <!--<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>-->
+            <!--</div>-->
+            <!--</article>-->
+            <!-- End Single Service Item -->
+
+            <!-- Single Service Item -->
+            <!--<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="400ms">-->
+            <!--<div class="service-block text-center">-->
+            <!--<div class="service-icon text-center">-->
+            <!--<i class="fa fa-android fa-5x"></i>-->
+            <!--</div>-->
+            <!--<h3>Apps Development</h3>-->
+            <!--<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>-->
+            <!--</div>-->
+            <!--</article>-->
+            <!-- End Single Service Item -->
+
+            <!-- Single Service Item -->
+            <!--<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">-->
+            <!--<div class="service-block text-center kill-margin-bottom">-->
+            <!--<div class="service-icon text-center">-->
+            <!--<i class="fa fa-link fa-5x"></i>-->
+            <!--</div>-->
+            <!--<h3>Networking</h3>-->
+            <!--<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>-->
+            <!--</div>-->
+            <!--</article>-->
+            <!-- End Single Service Item -->
+
+        </div>        <!-- End row -->
+    </div>    <!-- End container -->
+</section>   <!-- End section -->
+
+
+<!-- Start Portfolio Section
+=========================================== -->
+
+<section id="showcase">
+    <div class="container">
+        <div class="row wow fadeInDown" data-wow-duration="500ms">
+            <div class="col-lg-12">
+
+                <!-- section title -->
+                <div class="title text-center">
+                    <h2><span class="color">团队介绍</span></h2>
+                    <div class="border"></div>
+                </div>
+                <!-- /section title -->
+
+                <!--portfolio item filtering -->
+                <div class="portfolio-filter clearfix">
+                    <ul class="text-center">
+                        <li><a href="javascript:void(0)" class="filter" data-filter="all">全部成员</a></li>
+                        <li><a href="javascript:void(0)" class="filter" data-filter=".app">技术团队</a></li>
+                        <!--<li><a href="javascript:void(0)" class="filter" data-filter=".photoshop">投资团队</a></li>-->
+                        <!--<li><a href="javascript:void(0)" class="filter" data-filter=".illustrator">媒体团队</a></li>-->
+                    </ul>
+                </div>
+                <!-- /portfolio item filtering -->
+
+            </div> <!-- /end col-lg-12 -->
+        </div> <!-- end row -->
+    </div>    <!-- end container -->
+
+    <div class="portfolio-item-wrapper wow fadeInUp" data-wow-duration="500ms">
+        <ul id="og-grid" class="og-grid">
+            <!-- /single portfolio item -->
+            <li class="mix app">
+                <a href="javascript:void(0)" data-largesrc="img/portfolio/CharlesLamb-1big.jpg"
+                   data-title="Charles·Lamb"
+                   data-description="毕业于美国Georgia Institute of Technology，计算机工程学士，计算机图形研究领域专家，精通Solidity，JScript，PostScript三种语言的开发与 应用，由于Solidity的语言开发背景，对以太坊的研究颇深，尤其对于DAPP应用的设计和架构，有着十分独到的见解和天赋，目前负责信链全部的产品设计工作。">
+                    <img src="img/portfolio/CharlesLamb-1.jpg" alt="Meghna">
+                    <div class="hover-mask">
+                        <h3>成员详情</h3>
+                        <span>
+			<i class="fa fa-plus fa-2x"></i>
+			</span>
+                    </div>
+                </a>
+            </li>
+            <li class="mix app">
+                <a data-largesrc="img/portfolio/JamesLovejoy-1big.jpg" data-title="James Lovejoy Ethereum"
+                   data-description="核心技术人员
+			James从 10 岁开始就以多种形式进行编程。他目前是麻省理工 DCI 的本科研究人员，致力于制定分散化的货币政策。">
+                    <img src="img/portfolio/JamesLovejoy-1.jpg" alt="Meghna">
+                    <div class="hover-mask">
+                        <h3>成员详情</h3>
+                        <span>
+			<i class="fa fa-plus fa-2x"></i>
+			</span>
+                    </div>
+                </a>
+            </li>
+            <!-- /single portfolio item -->
+            <li class="mix app">
+                <a href="javascript:void(0)" data-largesrc="img/portfolio/ArtemDavidovichAvetisyan-1big.jpg"
+                   data-title="Artem Davidovich Avetisyan
+			Ethereum Foundation" data-description="联合创始人/首席执行官。多家金融公司的 CEO。他被授予俄罗斯联邦政府金融学院。他从 2013 年开始投资比特币。">
+                    <img src="img/portfolio/ArtemDavidovichAvetisyan-1.jpg" alt="Meghna">
+                    <div class="hover-mask">
+                        <h3>成员详情</h3>
+                        <span>
+			<i class="fa fa-plus fa-2x"></i>
+			</span>
+                    </div>
+                </a>
+            </li>
+            <!-- /single portfolio item -->
+            <li class="mix app">
+                <a href="javascript:void(0)" data-largesrc="img/portfolio/RichardElls-1big.jpg"
+                   data-title="Richard Ells Ethereum Foundation"
+                   data-description="联合创始人/总监 他共同创立了现在已有 20 多年历史的成功数字机构 SiteWizard。他在 2013 年创立了Retortal.com。作为首席执行官，理查德组建了一个由 40 多位开发人员组成的团队，并创建了一个社交媒体管理平台，由全球财富 500 强公司如康宝莱和雅芳使用。 Retortal 的软件被成千上万的人使用。">
+                    <img src="img/portfolio/RichardElls-1.jpg" alt="Meghna">
+                    <div class="hover-mask">
+                        <h3>成员详情</h3>
+                        <span>
+			<i class="fa fa-plus fa-2x"></i>
+			</span>
+                    </div>
+                </a>
+            </li>
+
+            <!-- single portfolio item -->
+            <li class="mix">
+                <a href="javascript:void(0)" data-largesrc="img/portfolio/weiyunfeibig.jpg" data-title="魏云飞"
+                   data-description="多年互联网金融连续创业者，金鑫聚宏资产管理公司CEO ，旗下基金已孵化3家公司成功上市。">
+                    <img src="img/portfolio/weiyunfei.jpg" alt="Meghna">
+                    <div class="hover-mask">
+                        <h3>成员详情</h3>
+                        <span>
+			<i class="fa fa-plus fa-2x"></i>
+			</span>
+                    </div>
+                </a>
+            </li>
+            <!-- /single portfolio item -->
+            <li class="mix">
+                <a href="javascript:void(0)" data-largesrc="img/portfolio/linyutongbig.jpg" data-title="林俞彤"
+                   data-description="三林控股集团董事长、阿童木新能源公司董事长、中飞蓝翔航空有限公司董事、中财汇众、金星聚宏董事、北京蓝天黑枸杞科技有限公司董事长、临沂汇英置业有限公司董事长、爱飞翔传媒公司董事长、蒙阴养老地产公司董事长、临沂康和商贸有限公司董事长。控股（瑞利）（瑞星）（瑞龙）；一泓医疗中心、道家养生中心董事长。">
+                    <img src="img/portfolio/linyutong.jpg" alt="Meghna">
+                    <div class="hover-mask">
+                        <h3>成员详情</h3>
+                        <span>
+			<i class="fa fa-plus fa-2x"></i>
+			</span>
+                    </div>
+                </a>
+            </li>
+            <!-- /single portfolio item -->
+            <li class="mix">
+                <a href="javascript:void(0)" data-largesrc="img/portfolio/qulongbig.jpg" data-title="曲龙"
+                   data-description="百度联盟理事。大连市电子商务常务会长（执行会长）、东北财经大学津桥商学院互联网校外导师。曾任大连优品时代科技有限公司董事、技术负责人及副总裁，现任天行健电子商务有限公司总经理 。东北亚互联网及电商大会发起人，成功举办过八届东北亚互联网及电商大会。
+			">
+                    <img src="img/portfolio/qulong.jpg" alt="Meghna">
+                    <div class="hover-mask">
+                        <h3>成员详情</h3>
+                        <span>
+			<i class="fa fa-plus fa-2x"></i>
+			</span>
+                    </div>
+                </a>
+            </li>
+
+            <!-- /single portfolio item -->
+            <li class="mix">
+                <a href="javascript:void(0)" data-largesrc="img/portfolio/xiongjianbig.jpg" data-title="熊健"
+                   data-description="联币未来科技创始人，CEO.游青创投资发展有限公司董事长,广源晟贸易有限公司总经理,好青年文化传播有限公司总经理,十佳创业青年。，华中区块链联盟发起人之一，武汉区块链产业联盟发起人之一。">
+                    <img src="img/portfolio/xiongjian.jpg" alt="Meghna">
+                    <div class="hover-mask">
+                        <h3>成员详情</h3>
+                        <span>
+			<i class="fa fa-plus fa-2x"></i>
+			</span>
+                    </div>
+                </a>
+            </li>
+            <!-- /single portfolio item -->
+            <li class="mix">
+                <a href="javascript:void(0)" data-largesrc="img/portfolio/linyinbig.jpg" data-title="林灏"
+                   data-description="IPTchain（泛娱链）基金会创始人">
+                    <img src="img/portfolio/linyin.jpg" alt="Meghna">
+                    <div class="hover-mask">
+                        <h3>成员详情</h3>
+                        <span>
+			<i class="fa fa-plus fa-2x"></i>
+			</span>
+                    </div>
+                </a>
+            </li>
+            <!-- /single portfolio item -->
+            <li class="mix">
+                <a href="javascript:void(0)" data-largesrc="img/portfolio/zhangjianguobig.jpg" data-title="张建国"
+                   data-description="量子比特币QBTC创始人，大象矿机创始人，中国区块链创投联盟主席    新加坡金币资本基金会主席">
+                    <img src="img/portfolio/zhangjianguo.jpg" alt="Meghna">
+                    <div class="hover-mask">
+                        <h3>成员详情</h3>
+                        <span>
+			<i class="fa fa-plus fa-2x"></i>
+			</span>
+                    </div>
+                </a>
+            </li>
+            <!-- /single portfolio item -->
+            <li class="mix">
+                <a href="javascript:void(0)" data-largesrc="img/portfolio/GeraldLongmanbig.jpg"
+                   data-title="Gerald·Longman"
+                   data-description="新加坡籍，毕业于加拿大University of Waterloo，数字体验创新硕士学位，研究领域为前沿网络系统的构架与设计，2012年接触比特币，2014年以太坊预售时，便专注于以太坊应用领域的研究，擅长“数字身份认证”相关DAPP的设计，并在2015年到2016年之间，创建自己的RKhc工作室，拥有了十余项技术创新。2017年11月被特聘到信链团队，负责整个项目的规划和构架。">
+                    <img src="img/portfolio/GeraldLongman.jpg" alt="Meghna">
+                    <div class="hover-mask">
+                        <h3>成员详情</h3>
+                        <span>
+			<i class="fa fa-plus fa-2x"></i>
+			</span>
+                    </div>
+                </a>
+            </li>
+
+
+            <li class="mix">
+                <a href="javascript:void(0)" data-largesrc="img/portfolio/BennettKelvin.jpg" data-title="Bennett·Kelvin"
+                   data-description="毕业于美国Carnegie Mellon University，计算机科学硕士学位和应用数学学士，精通BASIC、PASCAL、C、COBOL、FORTRAN、LOGO以及VC、VB等高级编程语言，在硅谷曾是三家互联网创业公司，HC&BBT，Leternal Ds 以及HDIK的联合创始人，对以太坊底层代码和系统构架有着十分深入的研究和开发经验。">
+                    <img src="img/portfolio/BennettKelvin.jpg" alt="Meghna">
+                    <div class="hover-mask">
+                        <h3>成员详情</h3>
+                        <span><i class="fa fa-plus fa-2x"></i></span>
+                    </div>
+                </a>
+            </li>
+            <!-- single portfolio item -->
+            <li class="mix">
+                <a href="javascript:void(0)" data-largesrc="img/portfolio/FabianJacob.jpg" data-title="Fabian·Jacob"
+                   data-description="毕业于美国Carnegie Mellon University，技术总监Bennett·Kelvin的大学同学，计算机科学硕士和数据科学学士，主要研究领域为网络性能分析与协议设计，并于2012年获得Microsoft Certified Systems Engineer证书，同时与Bennett·Kelvin同为创业公司HDIK的联合创始人。现为信链的研发主管，主要负责整个系统底层协议的部署和具体的研发工作。">
+                    <img src="img/portfolio/FabianJacob.jpg" alt="Meghna">
+                    <div class="hover-mask">
+                        <h3>成员详情</h3>
+                        <span>
+							<i class="fa fa-plus fa-2x"></i>
+						</span>
+                    </div>
+                </a>
+            </li>
+
+        </ul> <!-- end og grid -->
+    </div>
+
+</section>   <!-- End section -->
+
+
+<!-- Start Team Skills
+=========================================== -->
+
+<section id="team-skills" class="parallax-section">
+    <div class="container">
+        <div class="row wow fadeInDown" data-wow-duration="500ms">
+
+            <!-- section title -->
+            <div class="title text-center">
+                <h2><span class="color">投资团队</span></h2>
+                <div class="border"></div>
+            </div>
+            <!-- /section title -->
+
+            <!-- skill set -->
+            <div class="col-md-2 col-sm-6 col-xs-12 wow fadeInUp col-md-offset-1" data-wow-duration="500ms">
+                <div class="skill-chart text-center">
+                    <img src="img/asset/Group%2081.jpg" alt="" style="height: 150px;width: 150px;">
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
+                <div class="skill-chart text-center">
+                    <img src="img/asset/Group%2082.jpg" alt="" style="height: 150px;width: 150px;">
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
+                <div class="skill-chart text-center">
+                    <img src="img/asset/Group%2083.jpg" alt="" style="height: 150px;width: 150px;">
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
+                <div class="skill-chart text-center">
+                    <img src="img/asset/Group%2068.jpg" alt="" style="height: 150px;width: 150px;">
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
+                <div class="skill-chart text-center">
+                    <img src="img/asset/Group%2067.jpg" alt="" style="height: 150px;width: 150px;">
+                </div>
+            </div>
+            <!-- end skill set -->
+
+            <!-- skill set -->
+            <!--<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">-->
+            <!--<div class="skill-chart text-center">-->
+            <!--<span class="chart" data-percent="90">-->
+            <!--<span class="percent">86</span>-->
+            <!--</span>-->
+            <!--<h3><i class="fa fa-html5"></i> HTML 5</h3>-->
+            <!--<p>Lorem ipsum has erroribus design color vituper bonorum depend you usedcom.bonorum dependan be used.</p>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; end skill set &ndash;&gt;-->
+
+            <!--&lt;!&ndash; skill set &ndash;&gt;-->
+            <!--<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">-->
+            <!--<div class="skill-chart text-center">-->
+            <!--<span class="chart" data-percent="85">-->
+            <!--<span class="percent"></span>-->
+            <!--</span>-->
+            <!--<h3><i class="fa fa-android"></i> Android</h3>-->
+            <!--<p>Lorem ipsum has erroribus design color vituper bonorum depend you usedcom.bonorum dependan be used.</p>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; end skill set &ndash;&gt;-->
+
+            <!--&lt;!&ndash; skill set &ndash;&gt;-->
+            <!--<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">-->
+            <!--<div class="skill-chart text-center">-->
+            <!--<span class="chart" data-percent="70">-->
+            <!--<span class="percent"></span>-->
+            <!--</span>-->
+            <!--<h3><i class="fa fa-apple"></i> IOS</h3>-->
+            <!--<p>Lorem ipsum has erroribus design color vituper bonorum depend you usedcom.bonorum dependan be used.</p>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!-- end skill set -->
+
+        </div>        <!-- End row -->
+    </div>    <!-- End container -->
+</section>   <!-- End section -->
+
+<!-- Start Our Team
+=========================================== -->
+
+<section id="our-team">
+    <div class="container">
+        <div class="row">
+
+            <!-- section title -->
+            <div class="title text-center wow fadeInUp" data-wow-duration="500ms">
+                <h2><span class="color">项目实施与规划</span></h2>
+                <div class="border"></div>
+            </div>
+            <!-- /section title -->
+            <div style="text-align: center;">
+                <img src="./img/project_plan.png" alt="">
+            </div>
+            <!-- team member -->
+            <!--<div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="500ms">-->
+            <!--<article class="team-mate">-->
+            <!--<div class="member-photo">-->
+            <!--&lt;!&ndash; member photo &ndash;&gt;-->
+            <!--<img class="img-responsive" src="img/team/member-1.jpg" alt="Meghna">-->
+            <!--&lt;!&ndash; /member photo &ndash;&gt;-->
+            <!---->
+            <!--&lt;!&ndash; member social profile &ndash;&gt;-->
+            <!--<div class="mask">-->
+            <!--<ul class="clearfix">-->
+            <!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+            <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+            <!--<li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
+            <!--<li><a href="#"><i class="fa fa-dribbble"></i></a></li>-->
+            <!--</ul>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; /member social profile &ndash;&gt;-->
+            <!--</div>-->
+            <!---->
+            <!--&lt;!&ndash; member name & designation &ndash;&gt;-->
+            <!--<div class="member-title">-->
+            <!--<h3>Abul Mal Muhit</h3>-->
+            <!--<span>CEO/Founder</span>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; /member name & designation &ndash;&gt;-->
+            <!---->
+            <!--&lt;!&ndash; about member &ndash;&gt;-->
+            <!--<div class="member-info">-->
+            <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; /about member &ndash;&gt;-->
+            <!---->
+            <!--</article>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; end team member &ndash;&gt;-->
+            <!---->
+            <!--&lt;!&ndash; team member &ndash;&gt;-->
+            <!--<div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">-->
+            <!--<article class="team-mate">-->
+            <!--<div class="member-photo">-->
+            <!--&lt;!&ndash; member photo &ndash;&gt;-->
+
+            <!--<img class="img-responsive" src="img/team/member-1.jpg" alt="Meghna">-->
+            <!--&lt;!&ndash; /member photo &ndash;&gt;-->
+            <!---->
+            <!--&lt;!&ndash; member social profile &ndash;&gt;-->
+            <!--<div class="mask">-->
+            <!--<ul class="clearfix">-->
+            <!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+            <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+            <!--<li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
+            <!--<li><a href="#"><i class="fa fa-dribbble"></i></a></li>-->
+            <!--</ul>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; /member social profile &ndash;&gt;-->
+            <!--</div>-->
+            <!---->
+            <!--&lt;!&ndash; member name & designation &ndash;&gt;-->
+            <!--<div class="member-title">-->
+            <!--<h3>Frank Miller</h3>-->
+            <!--<span>Manager</span>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; /member name & designation &ndash;&gt;-->
+            <!---->
+            <!--&lt;!&ndash; about member &ndash;&gt;-->
+            <!--<div class="member-info">-->
+            <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; /about member &ndash;&gt;-->
+            <!--</article>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; end team member &ndash;&gt;-->
+            <!---->
+            <!--&lt;!&ndash; team member &ndash;&gt;-->
+            <!--<div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="400ms">-->
+            <!--<article class="team-mate">-->
+            <!--<div class="member-photo">-->
+            <!--&lt;!&ndash; member photo &ndash;&gt;-->
+            <!--<img class="img-responsive" src="img/team/member-1.jpg" alt="Meghna">-->
+            <!--&lt;!&ndash; /member photo &ndash;&gt;-->
+            <!---->
+            <!--&lt;!&ndash; member social profile &ndash;&gt;-->
+            <!--<div class="mask">-->
+            <!--<ul class="clearfix">-->
+            <!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+            <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+            <!--<li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
+            <!--<li><a href="#"><i class="fa fa-dribbble"></i></a></li>-->
+            <!--</ul>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; /member social profile &ndash;&gt;-->
+            <!--</div>-->
+            <!---->
+            <!--&lt;!&ndash; member name & designation &ndash;&gt;-->
+            <!--<div class="member-title">-->
+            <!--<h3>Michael Jonson</h3>-->
+            <!--<span>Web Developer</span>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; /member name & designation &ndash;&gt;-->
+            <!---->
+            <!--&lt;!&ndash; about member &ndash;&gt;-->
+            <!--<div class="member-info">-->
+            <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; /about member &ndash;&gt;-->
+            <!--</article>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; end team member &ndash;&gt;-->
+            <!---->
+            <!--&lt;!&ndash; team member &ndash;&gt;-->
+            <!--<div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">-->
+            <!--<article class="team-mate kill-margin-bottom">-->
+            <!--<div class="member-photo">-->
+            <!--&lt;!&ndash; member photo &ndash;&gt;-->
+            <!--<img class="img-responsive" src="img/team/member-1.jpg" alt="Meghna">-->
+            <!--&lt;!&ndash; /member photo &ndash;&gt;-->
+            <!---->
+            <!--&lt;!&ndash; member social profile &ndash;&gt;-->
+            <!--<div class="mask">-->
+            <!--<ul class="clearfix">-->
+            <!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+            <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+            <!--<li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
+            <!--<li><a href="#"><i class="fa fa-dribbble"></i></a></li>-->
+            <!--</ul>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; /member social profile &ndash;&gt;-->
+            <!--</div>-->
+            <!---->
+            <!--&lt;!&ndash; member name & designation &ndash;&gt;-->
+            <!--<div class="member-title">-->
+            <!--<h3>Mo. Kha. Alamgir</h3>-->
+            <!--<span>SEO Specialist</span>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; /member name & designation &ndash;&gt;-->
+            <!---->
+            <!--&lt;!&ndash; about member &ndash;&gt;-->
+            <!--<div class="member-info">-->
+            <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; /about member &ndash;&gt;-->
+            <!--</article>-->
+            <!--</div>-->
+            <!-- end team member -->
+
+        </div>    <!-- End row -->
+    </div>    <!-- End container -->
+</section>   <!-- End section -->
+
+
+<!-- Start Twitter Feed
+=========================================== -->
+
+<section id="twitter-feed" class="parallax-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="title text-center wow fadeInUp" data-wow-duration="500ms">
+                    <h2><span class="color">发展前景</span></h2>
+                    <div class="border"></div>
+                </div>
+                <div class="client-info">
+                    <!--<div class="client-meta">-->
+                    <!--<h3>Abul Mal Muhit</h3>-->
+                    <!--<span>Dec 26, 2017</span>-->
+                    <!--</div>-->
+                    <div class="client-comment">
+                        <p>信链整个产品模式简单明了，主要有风控系统，代扣系统企业数据库，API借口，数据记录区块及查询付费系统几个部分组成 </p>
+                        <p> 输入系统：包括信用数据库，第三方黑名单，第三方数据源。（央行征信，房产车辆，芝麻分微粒贷）</p>
+                        <!--<ul class="social-profile">-->
+                        <!--<li><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a></li>-->
+                        <!--<li><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a></li>-->
+                        <!--<li><a href="#"><i class="fa fa-linkedin-square fa-lg"></i></a></li>-->
+                        <!--</ul>-->
+                    </div>
+                </div>
+                <!-- twitter bird -->
+                <!--<div class="twitter-bird wow fadeInDown" data-wow-duration="500ms">-->
+                <!--<div class="color">-->
+                <!--发展前景-->
+                <!--</div>-->
+                <!--&lt;!&ndash;<span>&ndash;&gt;-->
+                <!--&lt;!&ndash;<i class="fa fa-twitter fa-4x"></i>&ndash;&gt;-->
+                <!--&lt;!&ndash;</span>&ndash;&gt;-->
+                <!--</div>-->
+                <!-- /twitter bird -->
+
+                <!-- fetching tweet -->
+
+                <!--<div class="tweet wow fadeIn" data-wow-duration="2000ms"></div>-->
+                <!-- /fetching tweet -->
+
+                <!-- follow us button -->
+                <!--<a href="" title="Follow Us" target="_blank" class="btn btn-transparent wow fadeInUp" data-wow-duration="500ms" style="background: #007CE2">Follow Us</a>-->
+                <!-- /follow us button -->
+
+            </div>
+        </div>       <!-- End row -->
+    </div>    <!-- End container -->
+</section>   <!-- End section -->
+
+<!-- Start Pricing section
+=========================================== -->
+
+<section id="pricing" class="bg-one">
+    <div class="container">
+        <div class="row">
+
+            <!-- section title -->
+            <div class="title text-center wow fadeInDown" data-wow-duration="500ms">
+                <h2><span class="color">媒体团队</span></h2>
+                <div class="border"></div>
+            </div>
+            <!-- /section title -->
+
+            <!-- single pricing table -->
+            <div style="overflow: hidden">
+                <article class="col-md-2 col-sm-6 col-xs-12 text-center wow fadeInUp col-md-offset-1"
+                         data-wow-duration="200ms">
+                    <div class="pricing">
+                        <img src="img/media/1.jpg" alt="">
+                    </div>
+                </article>
+                <!-- end single pricing table -->
+                <article class="col-md-2 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="200ms">
+                    <div class="pricing">
+                        <img src="img/media/2.jpg" alt="">
+                    </div>
+                </article>
+                <!-- end single pricing table -->
+                <article class="col-md-2 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="200ms">
+                    <div class="pricing">
+                        <img src="img/media/3.jpg" alt="">
+                    </div>
+                </article>
+                <!-- end single pricing table -->
+                <article class="col-md-2 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="200ms">
+                    <div class="pricing">
+                        <img src="img/media/4.jpg" alt="">
+                    </div>
+                </article>
+                <!-- end single pricing table -->
+                <article class="col-md-2 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="200ms">
+                    <div class="pricing">
+                        <img src="img/media/5.jpg" alt="">
+                    </div>
+                </article>
+            </div>
+            <div style="margin-top: 20px;">
+                <article class="col-md-2 col-sm-6 col-xs-12 text-center wow fadeInUp col-md-offset-1"
+                         data-wow-duration="200ms">
+                    <div class="pricing">
+                        <img src="img/media/6.jpg" alt="">
+                    </div>
+                </article>
+                <article class="col-md-2 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="200ms">
+                    <div class="pricing">
+                        <img src="img/media/7.jpg" alt="">
+                    </div>
+                </article>
+                <article class="col-md-2 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="200ms">
+                    <div class="pricing">
+                        <img src="img/media/8.jpg" alt="">
+                    </div>
+                </article>
+                <article class="col-md-2 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="200ms">
+                    <div class="pricing">
+                        <img src="img/media/9.jpg" alt="">
+                    </div>
+                </article>
+            </div>
+
+
+        </div>       <!-- End row -->
+    </div>    <!-- End container -->
+</section>   <!-- End section -->
+
+
+<!-- Start Testimonial
+=========================================== -->
+
+<section id="testimonial" class="parallax-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title text-center wow fadeInDown" data-wow-duration="500ms">
+                    <h2><span class="color">产品运营</span></h2>
+                    <div class="border"></div>
+                </div>
+
+                <!-- section title -->
+                <!--<div class="sub-title text-center wow fadeInDown" data-wow-duration="500ms">-->
+                <!--&lt;!&ndash;<h3>What People Say About Us</h3>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div>&ndash;&gt;-->
+                <!--<h3>产品运营</h3>-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--</div>-->
+                <!-- /section title -->
+
+                <!-- testimonial wrapper -->
+                <div id="testimonials" class="wow fadeInUp" data-wow-duration="500ms" data-wow-delay="100ms">
+
+                    <!-- testimonial single -->
+                    <div class="item text-center">
+
+                        <!-- client photo -->
+                        <!--<div class="client-thumb">-->
+                        <!--<img src="img/team/client.jpg" class="img-responsive" alt="Meghna">-->
+                        <!--</div>-->
+                        <!-- /client photo -->
+
+                        <!-- client info -->
+                        <div class="client-info">
+                            <!--<div class="client-meta">-->
+                            <!--<h3>Abul Mal Muhit</h3>-->
+                            <!--<span>Dec 26, 2017</span>-->
+                            <!--</div>-->
+                            <div class="client-comment">
+                                <p>
+                                    我国虽有征信机构200余家，行业收入20亿多元，也可以说是有一定的市场规模，但远远不能满足市场强烈地需求。特别是在个人征信这一块，该领域目前收入在2亿元左右，对比西方发达国家的个人征信市场规模，保守估计我国个人征信应该是千亿级的，行业成长空间可达上百倍，未来发展前景十分巨大。如此一来，征信行业必将成为下一个财富大风口。
+                                </p>
+
+                                <!--<ul class="social-profile">-->
+                                <!--<li><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a></li>-->
+                                <!--<li><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a></li>-->
+                                <!--<li><a href="#"><i class="fa fa-linkedin-square fa-lg"></i></a></li>-->
+                                <!--</ul>-->
+                            </div>
+                        </div>
+                        <!-- /client info -->
+                    </div>
+                    <!-- /testimonial single -->
+
+                    <!-- testimonial single -->
+                    <!--<div class="item text-center">-->
+                    <!---->
+                    <!--&lt;!&ndash; client photo &ndash;&gt;-->
+                    <!--<div class="client-thumb">-->
+                    <!--<img src="img/team/client.jpg" class="img-responsive" alt="Meghna">-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash; /client photo &ndash;&gt;-->
+                    <!---->
+                    <!--&lt;!&ndash; client info &ndash;&gt;-->
+                    <!--<div class="client-info">-->
+                    <!--<div class="client-meta">-->
+                    <!--<h3>Abul Mal Muhit</h3>-->
+                    <!--<span>Dec 26, 2017</span>-->
+                    <!--</div>-->
+                    <!--<div class="client-comment">-->
+                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ex, cupiditate, error, suscipit saepe sed ea consequuntur inventore sequi sit illo.</p>-->
+                    <!--<ul class="social-profile">-->
+                    <!--<li><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a></li>-->
+                    <!--<li><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a></li>-->
+                    <!--<li><a href="#"><i class="fa fa-linkedin-square fa-lg"></i></a></li>-->
+                    <!--</ul>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash; /client info &ndash;&gt;-->
+                    <!--</div>-->
+                    <!-- /testimonial single -->
+
+                    <!-- testimonial single -->
+                    <!--<div class="item text-center">-->
+                    <!---->
+                    <!--&lt;!&ndash; client photo &ndash;&gt;-->
+                    <!--<div class="client-thumb">-->
+                    <!--<img src="img/team/client.jpg" class="img-responsive" alt="Meghna">-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash; /client photo &ndash;&gt;-->
+                    <!---->
+                    <!--&lt;!&ndash; client info &ndash;&gt;-->
+                    <!--<div class="client-info">-->
+                    <!--<div class="client-meta">-->
+                    <!--<h3>Abul Mal Muhit</h3>-->
+                    <!--<span>Dec 26, 2017</span>-->
+                    <!--</div>-->
+                    <!--<div class="client-comment">-->
+                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ex, cupiditate, error, suscipit saepe sed ea consequuntur inventore sequi sit illo.</p>-->
+                    <!--<ul class="social-profile">-->
+                    <!--<li><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a></li>-->
+                    <!--<li><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a></li>-->
+                    <!--<li><a href="#"><i class="fa fa-linkedin-square fa-lg"></i></a></li>-->
+                    <!--</ul>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash; /client info &ndash;&gt;-->
+                    <!--</div>-->
+                    <!-- /testimonial single -->
+
+                </div>        <!-- end testimonial wrapper -->
+            </div>        <!-- end col lg 12 -->
+        </div>        <!-- End row -->
+    </div>       <!-- End container -->
+</section>    <!-- End Section -->
+
+
+<!--
+Start Blog Section
+=========================================== -->
+
+<section id="blog" class="bg-one">
+    <div class="container">
+        <div class="row">
+            <div class="title text-center wow fadeInDown">
+                <h2><span class="color">新闻资讯</span></h2>
+                <div class="border"></div>
+            </div>
+            <div class="clearfix">
+                <article class="col-md-4 col-sm-6 col-xs-12 clearfix wow fadeInUp col-md-offset-4"
+                         data-wow-duration="500ms">
+                    <div class="note">
+                        <div class="media-wrapper">
+                            <img src="img/blog/news1.png" alt="amazing caves coverimage" class="img-responsive"
+                                 style="width: 100%">
+                        </div>
+                        <div class="excerpt">
+                            <h3>区块链：用数学来解决人性的不信任</h3>
+                            <p>从中本聪石破天惊的一篇论文开始，区块链以一种不可阻挡的姿态迅速地发展。随着区块链的进一步开发，各种应用场景纷纷被发掘，这个从比特币中涅槃而生的创新技术，正在颠覆...</p>
+                            <a class="btn btn-transparent" href="./single-post.html" style="background:#007CE2">更多</a>
+                        </div>
+                    </div>
+                </article>
+                <!--<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">-->
+                <!--<div class="note">-->
+                <!--<div class="media-wrapper">-->
+                <!--<div class="item">-->
+                <!--<img src="img/blog/news2.png" alt="amazing caves coverimage" class="img-responsive">-->
+                <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="excerpt">-->
+                <!--<h3>信链团队首轮路演</h3>-->
+                <!--<p>信链与澳大利亚U网在北京成立办信链与澳大利亚U网在北京成立办信链与澳大利亚U网在北京成立办信链与澳大利亚U网在北京成立办信链与澳大利亚U网在北京成立办</p>-->
+                <!--<a class="btn btn-transparent" href="https://mp.weixin.qq.com/s?__biz=MzU3NzAwNzk0Mg==&mid=2247484534&idx=1&sn=3f33180dc4f8ae92d9fc89a7334914d4&chksm=fd0a7c5fca7df5496229ba2936aea1b630927486e29b49d10cee50f06d998be0930d927fcb6b&mpshare=1&scene=1&srcid=0112pJt87qSRoi3bWPXjZ0Pv#rd" style="background:#007CE2">更多</a>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</article>-->
+                <!--<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">-->
+                <!--<div class="note">-->
+                <!--<div class="media-wrapper">-->
+                <!--<img src="img/blog/news3.png" alt="amazing caves coverimage" class="img-responsive">-->
+                <!--</div>-->
+                <!--<div class="excerpt">-->
+                <!--<h3>信链团队首轮路演</h3>-->
+                <!--<p>信链与澳大利亚U网在北京成立办信链与澳大利亚U网在北京成立办信链与澳大利亚U网在北京成立办信链与澳大利亚U网在北京成立办信链与澳大利亚U网在北京成立办</p>-->
+                <!--<a class="btn btn-transparent" href="https://mp.weixin.qq.com/s?__biz=MzU3NzAwNzk0Mg==&mid=2247484534&idx=1&sn=3f33180dc4f8ae92d9fc89a7334914d4&chksm=fd0a7c5fca7df5496229ba2936aea1b630927486e29b49d10cee50f06d998be0930d927fcb6b&mpshare=1&scene=1&srcid=0112pJt87qSRoi3bWPXjZ0Pv#rd" style="background:#007CE2">更多</a>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</article>-->
+                <!--<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">-->
+                <!--<div class="note kill-margin-bottom">-->
+                <!--<div class="media-wrapper">-->
+                <!--<img src="img/blog/news4.png" alt="amazing caves coverimage" class="img-responsive">-->
+                <!--</div>-->
+                <!--<div class="excerpt">-->
+                <!--<h3>信链团队首轮路演</h3>-->
+                <!--<p>信链与澳大利亚U网在北京成立办信链与澳大利亚U网在北京成立办信链与澳大利亚U网在北京成立办信链与澳大利亚U网在北京成立办信链与澳大利亚U网在北京成立办</p>-->
+                <!--<a class="btn btn-transparent" href="https://mp.weixin.qq.com/s?__biz=MzU3NzAwNzk0Mg==&mid=2247484534&idx=1&sn=3f33180dc4f8ae92d9fc89a7334914d4&chksm=fd0a7c5fca7df5496229ba2936aea1b630927486e29b49d10cee50f06d998be0930d927fcb6b&mpshare=1&scene=1&srcid=0112pJt87qSRoi3bWPXjZ0Pv#rd" style="background:#007CE2">更多</a>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</article>-->
+            </div>
+
+            <!--<div class="all-post text-center">-->
+            <!--<a class="btn btn-transparent" href="https://mp.weixin.qq.com/s?__biz=MzU3NzAwNzk0Mg==&mid=2247484534&idx=1&sn=3f33180dc4f8ae92d9fc89a7334914d4&chksm=fd0a7c5fca7df5496229ba2936aea1b630927486e29b49d10cee50f06d998be0930d927fcb6b&mpshare=1&scene=1&srcid=0112pJt87qSRoi3bWPXjZ0Pv#rd" style="background:#007CE2">查看更多</a>-->
+            <!--</div>-->
+
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section> <!-- end section -->
+
+<!-- Srart Contact Us
+=========================================== -->
+<section id="contact-us">
+    <div class="container" style="background: #2B2C30">
+        <div class="row">
+            <div class="client-info">
+                <div class="client-comment">
+                    <div class="copyright text-center">
+						<span style="display: inline-block;width: 270px;float: left">
+							<a href="index.html">
+							<!--<img src="img/logo-meghna.png" alt="Meghna" /> -->
+								<img src="./img/logo4.png" alt="Meghna" style="margin-bottom: 15px;"/>
+							</a>
+							<br/>
+							<p style="margin-top: 40px;">Copyright © 2018. 三林信链 版权所有</p>
+						</span>
+                        <span style="display: inline-block;">
+							<p style="text-align: left" class="ionicImg">
+								<img src="./img/ionic/1.png" alt="">
+								<img src="./img/ionic/2.png" alt="">
+								<img src="./img/ionic/3.png" alt="">
+								<img src="./img/ionic/4.png" alt="">
+							</p>
+						</span>
+                        <span style="display: inline-block;width:168px;float: right;">
+							<p style="text-align: left"><i class="fa fa-qq"></i>&nbsp;&nbsp;&nbsp;1144978558 </p>
+							<p style="text-align: left"><i class="fa fa-weixin"></i>&nbsp;&nbsp;&nbsp;TrustChainOne</p>
+
+						</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--</section> &lt;!&ndash; end section &ndash;&gt;-->
+    <!--<section id="contact-us">-->
+    <!--<div class="container">-->
+    <!--<div class="row">-->
+    <!--&lt;!&ndash; section title &ndash;&gt;-->
+    <!--<div class="title text-center wow fadeIn" data-wow-duration="500ms">-->
+    <!--<h2 style="color:#007CE2">联系我们</h2>-->
+    <!--<div class="border"></div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash; /section title &ndash;&gt;-->
+    <!--<ul style="margin-bottom: 100px;text-align: center;">-->
+    <!--<li>-->
+    <!--QQ 1144978558-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--官方公众号 TrustChainOne-->
+    <!--</li>-->
+    <!--</ul>-->
+    <!--</div> &lt;!&ndash; end row &ndash;&gt;-->
+    <!--</div> &lt;!&ndash; end container &ndash;&gt;-->
+    <!--&lt;!&ndash; /Google Map &ndash;&gt;-->
+
+    <!--</section> &lt;!&ndash; end section &ndash;&gt;-->
+
+    <!-- end Contact Area
+    ========================================== -->
+
+    <!--<footer id="footer" class="bg-one">-->
+    <!--<div class="container">-->
+    <!--<div class="row wow fadeInUp" data-wow-duration="500ms">-->
+    <!--<div class="col-lg-12">-->
+    <!--<div class="client-info" style="margin-bottom: 70px;width: 286px;">-->
+    <!--<div class="client-comment">-->
+    <!--<div class="copyright text-center">-->
+    <!--<a href="index.html">-->
+    <!--&lt;!&ndash;<img src="img/logo-meghna.png" alt="Meghna" /> &ndash;&gt;-->
+    <!--<img src="./img/logo.png" alt="Meghna" style="margin-bottom: 15px;"/>-->
+    <!--</a>-->
+    <!--<br/>-->
+    <!--<p>Copyright © 2002-2018. 三林信链 版权所有</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div> &lt;!&ndash; end col lg 12 &ndash;&gt;-->
+    <!--</div> &lt;!&ndash; end row &ndash;&gt;-->
+    <!--</div> &lt;!&ndash; end container &ndash;&gt;-->
+    <!--</footer> &lt;!&ndash; end footer &ndash;&gt;-->
+    <div class="qrcode">
+        <img src="img/qrcode.jpeg" alt="">
+    </div>
+    <a href="javascript:;" id="scrollUp">
+        <i class="fa fa-angle-up fa-2x"></i>
+    </a>
+
+    <!-- end Footer Area
+    ========================================== -->
+
+    <!--
+    Essential Scripts
+    =====================================-->
+
+    <!-- Main jQuery -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <!-- Bootstrap 3.1 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Slitslider -->
+    <script src="js/jquery.slitslider.js"></script>
+    <script src="js/jquery.ba-cond.min.js"></script>
+    <!-- Parallax -->
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <!-- Owl Carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Portfolio Filtering -->
+    <script src="js/jquery.mixitup.min.js"></script>
+    <!-- Custom Scrollbar -->
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <!-- Jappear js -->
+    <script src="js/jquery.appear.js"></script>
+    <!-- Pie Chart -->
+    <script src="js/easyPieChart.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing-1.3.pack.js"></script>
+    <!-- tweetie.min -->
+    <!--<script src="js/tweetie.min.js"></script>-->
+
+    <!-- Highlight menu item -->
+    <script src="js/jquery.nav.js"></script>
+    <!-- Sticky Nav -->
+    <script src="js/jquery.sticky.js"></script>
+    <!-- Number Counter Script -->
+    <script src="js/jquery.countTo.js"></script>
+    <!-- wow.min Script -->
+    <script src="js/wow.min.js"></script>
+    <!-- For video responsive -->
+    <script src="js/jquery.fitvids.js"></script>
+    <!-- Grid js -->
+    <script src="js/grid.js"></script>
+    <!-- Custom js -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
