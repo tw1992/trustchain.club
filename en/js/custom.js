@@ -6,9 +6,9 @@ jQuery(function ($) { "use strict";
 	/*	Page Preloader
 	/* ========================================================================= */
 	
-	window.onload = function () {
-		document.getElementById('loading-mask').style.display = 'none';
-	}
+	// window.onload = function () {
+	// 	document.getElementById('loading-mask').style.display = 'none';
+	// }
 
 	/* =========================================================================== */
 	/*	FitVids js
@@ -288,7 +288,7 @@ jQuery(function ($) { "use strict";
 /*	On scroll fade/bounce fffect
 /* ========================================================================= */
 
-	wow = new WOW({
+	var wow = new WOW({
 		animateClass: 'animated',
 		offset: 120
 	});
